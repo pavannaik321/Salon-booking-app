@@ -14,18 +14,15 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
         primaryColor: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Mirror Me'),
+      home: const MyHomePage(title: 'Mirror_Me'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
-
-
 
   final String title;
 
@@ -34,14 +31,10 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
-
         title: Text(widget.title),
       ),
       body: Row(
@@ -54,16 +47,13 @@ class _MyHomePageState extends State<MyHomePage> {
           Text('D'),
           Text('E'),
           Text('F'),
-          ElevatedButton(onPressed: (){
-
-          }, child: Text('click'))
+          ElevatedButton(
+              onPressed: () {
+                print("hello");
+              },
+              child: Text('click'))
         ],
-
       ),
-
-
-
-
     );
   }
 }
