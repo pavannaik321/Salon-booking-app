@@ -37,22 +37,78 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text(widget.title),
         ),
-        body: Center(
-          child: InkWell(
-            child: Container(
-              width: 100,
-              height: 100,
-              color: Colors.amber,
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        Container(
+                          margin: EdgeInsets.all(11),
+                          height: 100,
+                          width: 100,
+                          color: Colors.amber,
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(11),
+                          height: 100,
+                          width: 100,
+                          color: Colors.amber,
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(11),
+                          height: 100,
+                          width: 100,
+                          color: Colors.amber,
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(11),
+                          height: 100,
+                          width: 100,
+                          color: Colors.amber,
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(11),
+                          height: 100,
+                          width: 100,
+                          color: Colors.amber,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(11),
+                  height: 100,
+                  color: Colors.amber,
+                ),
+                Container(
+                  margin: EdgeInsets.all(11),
+                  height: 100,
+                  color: Colors.amber,
+                ),
+                Container(
+                  margin: EdgeInsets.all(11),
+                  height: 100,
+                  color: Colors.amber,
+                ),
+                Container(
+                  margin: EdgeInsets.all(11),
+                  height: 100,
+                  color: Colors.amber,
+                ),
+                Container(
+                  margin: EdgeInsets.all(11),
+                  height: 100,
+                  color: Colors.amber,
+                ),
+              ],
             ),
-            onTap: () {
-              print('click');
-            },
-            onLongPress: () {
-              print('long pressed');
-            },
-            onDoubleTap: () {
-              print('double pressed');
-            },
           ),
         ));
   }
