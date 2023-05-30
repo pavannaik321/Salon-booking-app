@@ -14,18 +14,15 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
         primaryColor: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Mirror Me'),
+      home: const MyHomePage(title: 'Mirror_Me'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
-
-
 
   final String title;
 
@@ -34,36 +31,85 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
-      appBar: AppBar(
-
-        title: Text(widget.title),
-      ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        //crossAxisAlignment: ,
-        children: [
-          Text('A'),
-          Text('B'),
-          Text('C'),
-          Text('D'),
-          Text('E'),
-          Text('F'),
-          ElevatedButton(onPressed: (){
-
-          }, child: Text('click'))
-        ],
-
-      ),
-
-
-
-
-    );
+        appBar: AppBar(
+          title: Text(widget.title),
+        ),
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        Container(
+                          margin: EdgeInsets.all(11),
+                          height: 100,
+                          width: 100,
+                          color: Colors.amber,
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(11),
+                          height: 100,
+                          width: 100,
+                          color: Colors.amber,
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(11),
+                          height: 100,
+                          width: 100,
+                          color: Colors.amber,
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(11),
+                          height: 100,
+                          width: 100,
+                          color: Colors.amber,
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(11),
+                          height: 100,
+                          width: 100,
+                          color: Colors.amber,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(11),
+                  height: 100,
+                  color: Colors.amber,
+                ),
+                Container(
+                  margin: EdgeInsets.all(11),
+                  height: 100,
+                  color: Colors.amber,
+                ),
+                Container(
+                  margin: EdgeInsets.all(11),
+                  height: 100,
+                  color: Colors.amber,
+                ),
+                Container(
+                  margin: EdgeInsets.all(11),
+                  height: 100,
+                  color: Colors.amber,
+                ),
+                Container(
+                  margin: EdgeInsets.all(11),
+                  height: 100,
+                  color: Colors.amber,
+                ),
+              ],
+            ),
+          ),
+        ));
   }
 }
