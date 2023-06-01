@@ -37,77 +37,65 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text(widget.title),
         ),
-        body: Padding(
-          padding: const EdgeInsets.all(8.0),
+        body: Container(
           child: SingleChildScrollView(
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: [
-                        Container(
-                          margin: EdgeInsets.all(11),
-                          height: 100,
-                          width: 100,
-                          color: Colors.amber,
-                        ),
-                        Container(
-                          margin: EdgeInsets.all(11),
-                          height: 100,
-                          width: 100,
-                          color: Colors.amber,
-                        ),
-                        Container(
-                          margin: EdgeInsets.all(11),
-                          height: 100,
-                          width: 100,
-                          color: Colors.amber,
-                        ),
-                        Container(
-                          margin: EdgeInsets.all(11),
-                          height: 100,
-                          width: 100,
-                          color: Colors.amber,
-                        ),
-                        Container(
-                          margin: EdgeInsets.all(11),
-                          height: 100,
-                          width: 100,
-                          color: Colors.amber,
-                        ),
-                      ],
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(children: [
+                Container(
+                  child: Row(children: [
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      width: 100,
+                      height: 100,
+                      color: Colors.amber,
                     ),
-                  ),
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      width: 100,
+                      height: 100,
+                      color: Colors.amber,
+                    ),
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      width: 100,
+                      height: 100,
+                      color: Colors.amber,
+                    ),
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      width: 100,
+                      height: 100,
+                      color: Colors.amber,
+                    ),
+                  ]),
                 ),
                 Container(
-                  margin: EdgeInsets.all(11),
+                  margin: EdgeInsets.all(10),
                   height: 100,
                   color: Colors.amber,
                 ),
                 Container(
-                  margin: EdgeInsets.all(11),
+                  margin: EdgeInsets.all(10),
                   height: 100,
                   color: Colors.amber,
                 ),
                 Container(
-                  margin: EdgeInsets.all(11),
+                  margin: EdgeInsets.all(10),
                   height: 100,
                   color: Colors.amber,
                 ),
                 Container(
-                  margin: EdgeInsets.all(11),
+                  margin: EdgeInsets.all(10),
                   height: 100,
                   color: Colors.amber,
                 ),
                 Container(
-                  margin: EdgeInsets.all(11),
+                  margin: EdgeInsets.all(10),
                   height: 100,
                   color: Colors.amber,
                 ),
-              ],
+              ]),
             ),
           ),
         ));
